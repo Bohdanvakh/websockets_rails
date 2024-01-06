@@ -10,12 +10,12 @@
 
 User.create!(email: 'johndoe@example.com',
             password: 'password',
-            password_condirmation: 'password')
+            password_confirmation: 'password')
 
 User.create!(email: 'loganpaul@example.com',
             password: 'password',
-            password_condirmation: 'password')
+            password_confirmation: 'password')
 
 User.create!(email: 'alexqwerty@example.com',
             password: 'password',
-            password_condirmation: 'password')
+            password_confirmation: 'password')
