@@ -14,6 +14,7 @@ export default class extends Controller {
     return consumer.subscriptions.create("RoomChannel", {
       connected() {
         // Called when the subscription is ready for use on the server
+        this.perform("get_user_data");
       },
 
       disconnected() {
@@ -22,6 +23,7 @@ export default class extends Controller {
 
       received(data) {
         // Called when there's incoming data on the websocket for this channel
+        console.log(data.data.email);
       }
     });
   }
