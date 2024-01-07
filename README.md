@@ -1,24 +1,7 @@
-# README
+## README
+This project is just one stage of my websockets practice.
+Do not consider this project to be a demonstration of my programming skills or knowledge.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The project reference - https://www.youtube.com/watch?v=EpMWkX5t0dk
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Websockents - https://guides.rubyonrails.org/action_cable_overview.html
