@@ -5,15 +5,17 @@ import consumer from "channels/consumer"
 export default class extends Controller {
   connect() {
     console.log("Hello, Stimulus!");
+    let roomId = this.element.dataset.roomId;
     this.sub = this.createActionCableChannel();
 
     console.log(this.sub);
   }
 
-  createActionCableChannel() {
-    return consumer.subscriptions.create("RoomChannel", {
+  createActionCableChannel(roomId) {
+    return consumer.subscriptions.create({channel: "RoomChannel", room_id: roomId}, {
       connected() {
         // Called when the subscription is ready for use on the server
+        this.perform("get_user_data");
       },
 
       disconnected() {
@@ -22,6 +24,7 @@ export default class extends Controller {
 
       received(data) {
         // Called when there's incoming data on the websocket for this channel
+        console.log(data.data.email);
       }
     });
   }
