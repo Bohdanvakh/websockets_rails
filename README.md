@@ -7,5 +7,6 @@ The project reference - https://www.youtube.com/watch?v=EpMWkX5t0dk
 Websockents - https://guides.rubyonrails.org/action_cable_overview.html
 
 Articles about websockets [
-  https://www.fullstacklabs.co/blog/websockets-in-rails
+  https://www.fullstacklabs.co/blog/websockets-in-rails,
+  https://www.theodinproject.com/lessons/ruby-on-rails-websockets-and-actioncable
 ]
